@@ -14,13 +14,11 @@ h1,
 h2 {
   color: var(--text-color);
   font-family: 'montserrat', sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
 p {
   font-family: 'open-sans', sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
