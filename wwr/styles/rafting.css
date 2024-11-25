@@ -12,12 +12,12 @@ body {
 
 h1,
 h2 {
-  font-family: montserrat, sans-serif;
+  font-family: 'montserrat', sans-serif;
   color: var(--text-color);
 }
 
 p {
-  font-family: open-sans, sans-serif;
+  font-family: 'open-sans', sans-serif;
 }
 
 .hero {
