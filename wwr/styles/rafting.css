@@ -12,35 +12,41 @@
 }
 
 body {
-  padding: 20px 60px;
+  margin: 20px 60px;
 }
 
 /* Header Section */
 header {
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   display: grid;
   grid-template-columns: 30% 1fr;
   margin: 1rem auto;
-  padding: 0 0 10px;
-  margin-bottom: 40px;
+  /* padding: 0 0 10px;
+  margin-bottom: 40px; */
   /* max-width: 1000px; */
 }
 
 header > img {
   width: 200px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+thead th {
   color: var(--text-color);
   font-family: "montserrat", sans-serif;
   font-style: normal;
 }
 
 p {
+  line-height: 1.5em;
+}
+
+p,
+tbody td {
   font-family: "open-sans", sans-serif;
   font-style: normal;
   text-align: justify;
@@ -69,6 +75,11 @@ nav li:last-child a {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  padding-right: 100px;
+}
+
+.navigation li {
+  padding: 0 10px;
 }
 
 .navigation a {
@@ -76,7 +87,7 @@ nav li:last-child a {
   display: block;
   font-family: "montserrat", sans-serif;
   font-style: normal;
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-decoration: none;
   transition: 0.25s ease;
   border-radius: 10px;
@@ -86,6 +97,11 @@ nav li:last-child a {
   /* color: #eed994; */
   color: white;
   background-color: #895129;
+}
+
+.navigation a.active {
+  color: black;
+  background-color: #D0A96D;
 }
 
 /* Hero Section */
@@ -342,7 +358,9 @@ footer .copyright {
   overflow: hidden; /* Ensures smooth entry */
   /* grid-row: 2/3; */
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
+  transform: translateX(-100%);
+  animation: slideIn 1.2s ease-out forwards;
 }
 
 .google-map > h2 {
@@ -352,7 +370,7 @@ footer .copyright {
 
 .google-map > iframe {
   /* width: calc(100% - 510px); */
-  width: 884px;
+  width: 100%;
   height: 100%;
 }
 
@@ -360,10 +378,10 @@ footer .copyright {
   width: 500px;
 }
 
-.google-map {
+/* .google-map {
   transform: translateX(-100%);
   animation: slideIn 1.2s ease-out forwards;
-}
+} */
 
 @keyframes slideIn {
   0% {
@@ -422,7 +440,7 @@ footer .copyright {
 }
 
 .contact-form form {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 0 0 auto;
   background-color: white;
   padding: 1rem 3rem;
@@ -468,7 +486,7 @@ footer .copyright {
   width: auto;
 }
 
-.contact-form button {
+button {
   background-color: #333;
   color: white;
   border: none;
@@ -487,10 +505,135 @@ footer .copyright {
   padding-left: 5px;
 }
 
-.contact-form button:hover {
+button:hover {
   filter: invert();
 }
 
 .wireframe {
   z-index: 10;
+}
+
+.index-main {
+  position: relative;
+}
+
+.newsletter-signup {
+  /* max-width: fit-content; */
+  margin: 0 auto;
+}
+
+.newsletter-signup > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: #F1F9FF;
+  padding: 30px;
+}
+
+.newsletter-signup > form h2 {
+  font-size: 22px;
+}
+
+.newsletter-signup > form > input {
+  width: 300px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid grey;
+}
+
+.newsletter-signup > form button {
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+.cta {
+  padding: 50px 0;
+  background-color: #F1F9FF;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cta > * {
+  text-align: center;
+}
+
+.cta button {
+  margin: auto;
+  padding: 15px 30px;
+}
+
+.cta a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: auto auto auto; */
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.grid-item {
+  /* display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-row: 1/4; */
+  /* grid-row: 1/4; */
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* grid-row: 1/2; */
+}
+
+/* .grid-item h3 {
+  grid-row: 2/3;
+} */
+
+.grid-item > p {
+  text-align: center;
+  /* grid-row: 3/4; */
+}
+
+.trip-table {
+  background-color: #F1F9FF;
+  padding: 1px 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.trip-table h2 {
+  text-align: center;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 10px;
+  text-align: left;
+  border: 3px solid white;
+}
+
+.trip-table th {
+  background-color: #e8e8e8;
+  color: #000000;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tbody a {
+  text-decoration: none;
+  color: white;
 }

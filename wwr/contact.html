@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/rafting.css">
   </head>
   <body>
+
     <header>
       <img src="images/logo.png" alt="Rapids logo">
       <nav>
@@ -22,51 +23,44 @@
           <li><a href="index.html">Index</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="trips.html">Trips</a></li>
-          <li class="active"><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="company-info">
         <div class="contact-block">
           <div class="address">
-            <h1>Contact Information</h1>
-            <p>
-              <strong>Address:</strong>
-              <a href="#google-map">7358 Mkhosana, Victoria Falls, Zimbabwe</a>
-            </p>
-            <p>
-              <strong>Phone:</strong>
-              <a href="tel:(123)456-7890">(123) 456-7890</a>
-            </p>
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> <a href="#google-map">123 River Road, City, State</a></p>
+            <p><strong>Phone:</strong> <a href="tel:(123)456-7890">(123) 456-7890</a></p>
             <p>
               <strong>Email:</strong>
-              <a href="mailto:info@victoriafallsrafting.com">info@victoriafallsrafting.com</a>
+              <a href="mailto:info@raftingadventures.com"
+                >info@raftingadventures.com</a
+              >
             </p>
           </div>
 
           <div id="google-map" class="google-map">
             <!-- <h2>Our Location</h2> -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7592.05700374698!2d25.836905390024164!3d-17.930824523340252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194fe5d7e84b8d45%3A0xd07ec24d11c1e4d9!2sVictoria%20Falls%20Rafting!5e0!3m2!1sen!2sza!4v1733344852547!5m2!1sen!2sza"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7592.05700374698!2d25.836905390024164!3d-17.930824523340252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194fe5d7e84b8d45%3A0xd07ec24d11c1e4d9!2sVictoria%20Falls%20Rafting!5e0!3m2!1sen!2sza!4v1733344852547!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
+
         <!-- Contact Form Section -->
         <section class="contact-form">
-          <form action="contact.html" method="POST">
+          <form action="" method="POST">
             <h2>Send Us a Message</h2>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
-            <h3>Message Purpose:</h3>
+            <h3 for="purpose">Message Purpose:</h3>
             <div>
               <span class="radio-group">
                 <label for="general">General Inquiry</label>
@@ -104,97 +98,52 @@
             <textarea id="message" name="message" required></textarea>
 
             <span class="newsletter">
-              <label for="newsletter"
-                >Please subscribe me to the monthly newsletter.</label
-              >
+              <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
               <input type="checkbox" id="newsletter" name="newsletter">
             </span>
 
-            <button type="submit">
-              <span></span>Send Message
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 53 58"
-                height="58"
-                width="53"
-              >
-                <path
-                  stroke-width="9"
-                  stroke="currentColor"
-                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"
-                ></path>
-              </svg>
-            </button>
+            <button type="submit"><span></span>Send Message <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58" height="58" width="53">
+              <path stroke-width="9" stroke="currentColor" d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"></path>
+              </svg></button>
           </form>
         </section>
+
       </section>
 
       <!-- Employee Profiles Section -->
-      <div class="employee-h2"><h2>Meet Our Team</h2></div>
+      <span class="employee-h2"><h2>Meet Our Team</h2></span>
       <section class="employee-profiles">
         <figure class="employee">
-          <img
-            src="images/staff5.webp"
-            alt="John Richards"
-            class="employee-photo"
-          >
-          <figcaption class="employee-name">
-            John Richards<br>
-            Rafting Guide
-          </figcaption>
+          <img src="images/staff5.webp" alt="John Richards" class="employee-photo">
+          <figcaption class="employee-name">John Richards<br>
+          Rafting Guide</figcaption>
         </figure>
         <figure class="employee">
-          <img
-            src="images/Happy-Rafter.webp"
-            alt="Jane Smith"
-            class="employee-photo"
-          >
-          <figcaption class="employee-name">
-            Jane Smith<br>
-            Customer Support
-          </figcaption>
+          <img src="images/Happy-Rafter.webp" alt="Jane Smith" class="employee-photo">
+          <figcaption class="employee-name">Jane Smith<br>
+          Customer Support</figcaption>
         </figure>
         <figure class="employee">
-          <img
-            src="images/160911-189amnah.webp"
-            alt="Mark Johnson"
-            class="employee-photo"
-          >
-          <figcaption class="employee-name">
-            Mark Johnson<br>
-            Safety Instructor
-          </figcaption>
+          <img src="images/160911-189amnah.webp" alt="Mark Johnson" class="employee-photo">
+          <figcaption class="employee-name">Mark Johnson<br>
+          Safety Instructor</figcaption>
         </figure>
       </section>
 
       <div class="testimonials">
         <h2>Testimonials</h2>
-        <p>
-          "An absolute adrenaline rush! The rapids were thrilling, and the
-          guides were incredibly skilled and made us feel safe throughout. I
-          loved the balance of adventure and moments of serene beauty as we
-          floated through stunning landscapes. It's an experience I'll never
-          forget, and I can't wait to do it again!"
-        </p>
+        <p>"An absolute adrenaline rush! The rapids were thrilling, and the guides were incredibly skilled and made us feel safe throughout. I loved the balance of adventure and moments of serene beauty as we floated through stunning landscapes. It's an experience I'll never forget, and I can't wait to do it again!"</p>
         <p>~ Peter</p>
         &nbsp;
-        <p>
-          "White water rafting was hands down one of the most exhilarating
-          experiences of my life! The power of the water combined with the
-          teamwork needed to navigate the rapids made it unforgettable. The
-          guides were fantastic—encouraging, knowledgeable, and fun. I'd
-          recommend it to anyone looking for adventure and a connection with
-          nature!"
-        </p>
+        <p>"White water rafting was hands down one of the most exhilarating experiences of my life! The power of the water combined with the teamwork needed to navigate the rapids made it unforgettable. The guides were fantastic—encouraging, knowledgeable, and fun. I'd recommend it to anyone looking for adventure and a connection with nature!"</p>
         <p>~ Stephanie</p>
       </div>
+
     </main>
+
     <footer>
       <p class="wireframe">
-        <a href="https://excalidraw.com/#json=-QFsKjYG7SkQuhZACIkjD,7oEWD0OVLQiLKrBsWlINOQ" target="_blank"
-          >View Contact Us Wireframe</a
-        >
+        <a href="https://excalidraw.com/#json=-QFsKjYG7SkQuhZACIkjD,7oEWD0OVLQiLKrBsWlINOQ" target="_blank">View Contact Us Wireframe</a>
       </p>
       <p class="copyright">©️2024 🚣 White Water Rafting 🚣 Stuart</p>
       <nav class="sociallinks">
@@ -212,5 +161,6 @@
         ></a>
       </nav>
     </footer>
+
   </body>
 </html>
